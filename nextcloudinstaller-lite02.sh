@@ -2,23 +2,9 @@ echo "* Checking for updates.."
 sudo apt update -y
 
 
-echo "* Installing net-tools.."
-sudo apt install net-tools -y
-echo "* net-tools installed!"
-
-
-
-
 echo "* Installing Apache web server.."
 sudo apt install -y apache2 libapache2-mod-php bzip2
 echo "* Apache Web server installed!"
-
-
-
-echo "* Installing PHP Modules for nextcloud.."
-sudo apt install -y php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-sqlite3
-echo "* PHP modules succesfully installed!"
-
 
 echo "* Enabling mod_rewrite for nextcloud to function properly.."
 sudo a2enmod rewrite
@@ -35,8 +21,6 @@ echo "* Apache Modules succesfully enabled!"
 echo "* Restarting apache.."
 sudo systemctl restart apache2
 echo "* apache succesfully restarted!"
-
-
 
 
 echo "* Downloading and extracting nextcloud files .. "
