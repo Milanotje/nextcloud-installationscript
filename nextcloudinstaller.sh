@@ -61,7 +61,4 @@ echo "* nextcloud installation completed"
 echo "* Acces the server by typing <ip>/nextcloud in your browser"
 echo "* Because the scipt is in beta there might've been a few flaws"
 echo "* Because of this the database user Password was setted back to default (nextcloud_pass)"
-echo "* Database credentials are:"
-echo "* Database name: nextcloud_db"
-echo "* Database user: nextcloud_user"
-echo "* Database user password: nextcloud_pass"
+echo "* Currently SQLite is the only Database, MySQL Will be added in feature
