@@ -2,21 +2,21 @@
 
 set -e
 
-#######################################################################
-#                                                                     #
-# Project 'nextcloud-installer'                                       #
-#                                                                     #
-# By: Milanotje#6666                                                  #
-#                                                                     #
-#   Quick notes:                                                      #  
-#                                                                     #
-#   This installer is in very early beta and issues are expected.     #
-#   It uses apache2 as webserver, NGINX coming soon!                  #
-#   This is made for ubuntu 20.04, but might work with other os's.    #
-#   This script is NOT associated with the official Nextcloud project.#
-#   We are not responsible for data loss or any other stuff.          #
-#                                                                     #
-#######################################################################
+echo #######################################################################
+echo #                                                                     #
+echo # Project 'nextcloud-installer'                                       #
+echo #                                                                     #
+echo # By: Milanotje#6666                                                  #
+echo #                                                                     #
+echo #   Quick notes:                                                      #  
+echo #                                                                     #
+echo #   This installer is in very early beta and issues are expected.     #
+echo #   It uses apache2 as webserver, NGINX coming soon!                  #
+echo #   This is made for ubuntu 20.04, but might work with other os's.    #
+echo #   This script is NOT associated with the official Nextcloud project.#
+echo #   We are not responsible for data loss or any other stuff.          #
+echo #                                                                     #
+echo #######################################################################
 
 # exit with error status code if user is not root
 if [[ $EUID -ne 0 ]]; then
@@ -54,7 +54,7 @@ nextcloud-installer() {
 }
 
 nextcloudlite-installer() {
-  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installationscript/main/nextcloudinstaller-lite02.sh)
+  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installationscript/main/nextcloudinstaller-lite.sh)
 }
 
 quit() {
