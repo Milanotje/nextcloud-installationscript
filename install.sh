@@ -54,7 +54,7 @@ nextcloud-installer() {
 }
 
 nextcloudlite-installer() {
-  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installer/main/maininstaller.sh)
+  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installationscript/main/nextcloudinstaller-lite.sh)
 }
 
 quit() {
