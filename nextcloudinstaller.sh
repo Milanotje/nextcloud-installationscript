@@ -53,6 +53,8 @@ sudo chown www-data:www-data /var/www/html/nextcloud/ -R
 sudo chmod 775 -R /var/www/html/nextcloud
 sudo systemctl restart apache2
 
+rm -r nextcloud-20.0.6.zip
+
 echo "* Done installing nextcloud"
 
 echo "* nextcloud installation completed"
